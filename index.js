@@ -8,7 +8,7 @@ const routerV1 = require('./src/routes/routeV1');
 app.use(express.json());
 app.use(express.static('uploads'));
 
-app.use((req, res, next) => {
+app.use((req, res) => {
     res.header("Access-Control-Allow-Origin", "*")
     res.header(
       "Access-Control-Allow-Headers",
@@ -19,9 +19,9 @@ app.use((req, res, next) => {
         "Access-Control-Allow-Methods",
         "POST, PUT, PATCH, GET, DELETE"
       )
-    //   return res.status(200).json({})
+      
     }
-    // next()
+
     return res.status(200).json({})
 });
 
