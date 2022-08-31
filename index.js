@@ -22,11 +22,3 @@ app.use(cors())
 
 app.use('/api/v1/', routerV1);
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-var child = exec(wget, function(err, stdout, stderr) {
-    if(err){
-        throw(err);
-    } else {
-        exec(run) 
-    }
-});
