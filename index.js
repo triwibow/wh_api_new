@@ -24,7 +24,7 @@ app.use(express.static('uploads'));
 //     next()
 // });
 
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors({ origin: "*", credentials: true,  optionsSuccessStatus: 200 }));
 
 app.use('/api/v1/', routerV1);
 
