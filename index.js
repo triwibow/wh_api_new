@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const routerV1 = require('./src/routes/routeV1');
 
 const corsOptions = {
-    origin: 'https://wayshub.netlify.app/',
+    origin: '*',
     optionsSuccessStatus: 200
 }
 
